@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main-container {
+            background-color: #F6F7F7;
+            display: flex;
+            gap: 7rem;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container1 {
+            display: block;
+            text-align: center;  
+            position: relative;
+            background-color: #FAFBFB;
+            border: none;
+            border-radius: 9%;
+            width: 25%;
+            height: 84%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .img-container img {
+            height: 467px;
+            margin-top: 3%;
+            border: none;
+            border-radius: 9%;
+        }
+
+         .info-container {
+            position: relative;
+            text-align: left;
+            margin-left: 7%;
+            margin-top: 6%;
+        }
+
+        .info-container h2 {
+          font-size: 2.2rem;
+          font-weight: 600;
+        }
+
+        .check-icon {
+            position: absolute;
+            width: 9%;
+            margin-left: 2%;
+        }
+
+       .info-container p {
+         color: grey;
+         margin-top: 2%;
+         font-size: 1.5rem;
+         line-height: 35px;
+       }
+       
+       .socialLinks-container {
+         display: flex;
+         justify-content: center;
+         font-size: 1.5rem;
+         font-weight: bold;
+         gap: 20px;
+         margin-top: 10%;
+       }
+
+       .followers-container {
+        position: relative;
+       }
+
+       .user-icon {
+        position: absolute;
+        height: 90%;
+        right: 9.5rem;
+        margin-top: 8px;
+       }
+
+      .followers-container span {
+        position: relative;
+        right: 6.5rem;
+        top: 8px;
+      }
+
+       
+     .following-container {
+        position: relative;
+     } 
+
+     .checkmark-icon {
+        position: absolute;
+        height: 170%;
+        right: 4rem;
+        
+     }
+
+     .following-container span {
+        position: relative;
+        right: 2.4rem;
+        top: 8px;
+     }
+
+     .followBtn-container {
+        position: relative;
+        margin-right: 4%;
+     }
+
+     .followBtn-container button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        padding: 16px 40px;
+        border: none;
+        border-radius: 40px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        width: 9rem;
+        background-color: #EFEEEE
+     }
+
+     button .add-icon {
+       width: 35%;
+     }
+
+     .followBtn-container button:hover {
+        background-color: #cfcfcff5
+     }
+
+
+
+
+
+     .container2 {
+            display: block;
+            text-align: center;  
+            position: relative;
+            background-color: #FAFBFB;
+            border: none;
+            border-radius: 9%;
+            width: 26%;
+            height: 84%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+         .img-container2 img {
+            height: 750px;
+            margin-top: 2%;
+            border: none;
+            border-radius: 9%;
+        }
+
+       .info-container2 {
+            position: relative;
+            bottom: 37%;
+            text-align: left;
+            margin-left: 9%;
+            margin-top: 6%;
+        }
+
+        .info-container2 h2 {
+          font-size: 2.2rem;
+          font-weight: 600;
+        }
+
+        .check-icon2 {
+            position: absolute;
+            width: 9%;
+            margin-left: 2%;
+        }
+
+       .info-container2 p {
+         color: grey;
+         margin-top: 2%;
+         font-size: 1.5rem;
+         line-height: 35px;
+       }
+
+       .socialLinks-container2 {
+         display: flex;
+         justify-content: center;
+         font-size: 1.5rem;
+         font-weight: bold;
+         gap: 20px;
+         margin-top: 10%;
+       }
+
+       .followers-container2 {
+        position: relative;
+        bottom: 17.5rem;
+       }
+
+       .user-icon2 {
+        position: absolute;
+        height: 90%;
+        right: 9.5rem;
+        margin-top: 8px;
+       }
+
+      .followers-container2 span {
+        position: relative;
+        right: 6.5rem;
+        top: 8px;
+      }
+
+       
+     .following-container2 {
+        position: relative;
+        bottom: 17.5rem;
+     } 
+
+     .checkmark-icon2 {
+        position: absolute;
+        height: 170%;
+        right: 4rem;
+        
+     }
+
+     .following-container2 span {
+        position: relative;
+        right: 2.4rem;
+        top: 8px;
+     }
+
+     .followBtn-container2 {
+        position: relative;
+        margin-right: 4%;
+        bottom: 17.5rem;
+     }
+
+     .followBtn-container2 button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        padding: 16px 40px;
+        border: none;
+        border-radius: 40px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        width: 9rem;
+        background-color: #EFEEEE
+     }
+
+     button .add-icon2 {
+       width: 35%;
+     }
+
+     .followBtn-container2 button:hover {
+        background-color: #cfcfcff5
+     }
+
+
+    @media only screen and (max-width:600px) {
+      .main-container {
+        display: inline;
+        height: 100%;
+      }
+    
+      .container1 {
+        height: 44rem;
+        width: 27rem;
+        padding: 10px 20px;
+        margin: 30px 15px;
+        border-radius: 18px;
+      }
+
+      .img-container img {
+        height: 25rem;
+        border-radius: 18px;
+      }
+      
+      .container2 {
+        height: 43rem;
+        width: 27rem;
+        padding: 10px 20px;
+        margin: 20px 15px;
+         margin-left: 2rem;
+        border-radius: 18px;
+      }
+
+      .img-container2 img {
+        height: 41rem;
+        width: 25rem;
+        border-radius: 18px;
+      }
+
+      .socialLinks-container ,
+      .socialLinks-container2 {
+        display: flex;
+        width: 26rem;
+      }
+
+      .followers-container ,
+      .followers-container2 {
+        left: 1rem;
+      }
+
+      .following-container ,
+      .following-container2 {
+        left: 1rem;
+      }
+      
+      .followBtn-container ,
+      .followBtn-container2 {
+        right: 1rem;
+      }
+
+    }
+
+    
+    @media (min-width: 601px) and (max-width: 768px) {
+     .main-container {
+        display: inline;
+        height: 100%;
+      }
+    
+      .container1 {
+        height: 45rem;
+        width: 35rem;
+        padding: 10px 20px;
+        margin: 30px 15px;
+        border-radius: 18px;
+      }
+
+      .img-container img {
+        height: 25rem;
+        width: 32rem;
+        border-radius: 18px;
+      }
+      
+      .container2 {
+        height: 45rem;
+        width: 35rem;
+        padding: 10px 20px;
+        margin: 20px 15px;
+        margin-left: 2rem;
+        border-radius: 18px;
+      }
+
+      .img-container2 img {
+        height: 42rem;
+        width: 32rem;
+        border-radius: 18px;
+      }
+
+      .socialLinks-container ,
+      .socialLinks-container2 {
+        display: flex;
+        width: 26rem;
+      }
+
+      .followers-container ,
+      .followers-container2 {
+        left: 3rem;
+      }
+
+      .following-container ,
+      .following-container2 {
+        left: 5rem;
+      }
+      
+      .followBtn-container ,
+      .followBtn-container2 {
+        left: 5rem;
+      }
+
+      
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="main-container">
+
+      <div class="container1">
+
+        <div class="img-container">
+            <img src="./Bobcut-hairstyle-lady__Image - Copy.jpg" alt="Lady Image">
+        </div>
+
+        <div class="info-container">
+          <h2>Sophie Bennett <img class="check-icon" src="./check-mark_4300471.png" alt="Check Mark Icon"> </h2>
+          <p>Product Designer who focuses <br>
+            on simplicity & usability.</p>
+        </div>
+
+        <div class="socialLinks-container">
+            <div class="followers-container">
+            <img class="user-icon" src="./user_17378675.png" alt="User Icon">
+            <span>312</span>
+            </div>
+       
+            <div class="following-container">
+                <img class="checkmark-icon" src="./simple-flat-copy-paste-check-mark-linear-concept-logo-design-approved-tick-checkmark-check-list-button-vector-design-and-illustration-2JW5589-removebg-preview.png" alt="checkmark">
+                <span>48</span>
+            </div>
+
+            <div class="followBtn-container">
+                <button type="submit">Follow <img class="add-icon" src="./add_3502449.png" alt="Add Icon"></button>
+            </div>
+        </div>
+
+      </div>
+
+       <div class="container2">
+
+      
+        <div class="img-container2">
+            <img src="./Bobcut-hairstyle-lady__Image.jpg" alt="Lady Image">
+        </div>
+        
+
+        <div class="info-container2">
+          <h2>Sophie Bennett <img class="check-icon2" src="./check-mark_4300471.png" alt="Check Mark Icon"> </h2>
+          <p>Product Designer who focuses <br>
+            on simplicity & usability.</p>
+        </div>
+
+        <div class="socialLinks-container2">
+            <div class="followers-container2">
+            <img class="user-icon2" src="./user_17378675.png" alt="User Icon">
+            <span>312</span>
+            </div>
+       
+            <div class="following-container2">
+                <img class="checkmark-icon2" src="./simple-flat-copy-paste-check-mark-linear-concept-logo-design-approved-tick-checkmark-check-list-button-vector-design-and-illustration-2JW5589-removebg-preview.png" alt="checkmark">
+                <span>48</span>
+            </div>
+
+            <div class="followBtn-container2">
+                <button type="submit">Follow <img class="add-icon2" src="./add_3502449.png" alt="Add Icon"></button>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+</body>
+</html>
